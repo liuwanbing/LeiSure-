@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  test
+//
+//  Created by lanou on 16/6/14.
+//  Copyright © 2016年 刘万兵. All rights reserved.
+//
+//简单的说，就是只要PCH文件导入过的头文件，整个工程都能使用，无需再次导入，路径推荐些相对路径（点击蓝色工程，buildsetting，搜索fix,prefixHeader 将.pch文件拖入填写路径的地方，然后删除第二个工程名的内容，使用的是相对路劲）
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "URLDefineHeader.h"
+#import "ConstantDefineHeader.h"
+#import "RequestTool.h"
+
+#import <UIImageView+WebCache.h>
+
+#import <MJRefresh/MJRefresh.h>
+#import "LOMusicManager.h"
+
+
+#import "AppDelegate.h"
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

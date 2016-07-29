@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MusicControllerView">
+            <rect key="frame" x="0.0" y="0.0" width="520" height="125"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMC-q1-wiB">
+                    <rect key="frame" x="210" y="9" width="20" height="4"/>
+                    <color key="backgroundColor" red="0.33684435540000002" green="1" blue="0.36694825710000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="1Mi-LF-L8d"/>
+                        <constraint firstAttribute="width" constant="20" id="eah-cr-CLg"/>
+                    </constraints>
+                </view>
+                <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hcg-dx-OvF">
+                    <rect key="frame" x="250" y="9" width="21" height="4"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="USd-tt-BHC"/>
+                        <constraint firstAttribute="width" constant="21" id="cwa-xA-OaM"/>
+                    </constraints>
+                </view>
+                <view tag="102" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybs-fe-Bke">
+                    <rect key="frame" x="291" y="9" width="20" height="4"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="ldv-qR-98y"/>
+                        <constraint firstAttribute="height" constant="4" id="v0m-eU-2ZY"/>
+                    </constraints>
+                </view>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fif-Ud-gxD">
+                    <rect key="frame" x="8" y="27" width="504" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="dxn-Gc-jkQ"/>
+                    </constraints>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW0-sq-4SG">
+                    <rect key="frame" x="145" y="50" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="1Ei-FF-10M"/>
+                        <constraint firstAttribute="height" constant="50" id="aiK-IB-acS"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="player_prev.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaW-ZC-PHJ">
+                    <rect key="frame" x="235" y="50" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="96F-td-Uvc"/>
+                        <constraint firstAttribute="height" constant="50" id="D3e-Wk-2hv"/>
+                    </constraints>
+                    <state key="selected" image="player_pause.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhQ-In-jRW">
+                    <rect key="frame" x="333" y="50" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="8bi-DL-3SP"/>
+                        <constraint firstAttribute="height" constant="50" id="OJ1-k5-vH9"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="player_next.png"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.87691038997007464" green="0.94888788985277639" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="RaW-ZC-PHJ" firstAttribute="top" secondItem="fif-Ud-gxD" secondAttribute="bottom" constant="8" id="22r-ju-0YE"/>
+                <constraint firstAttribute="trailing" secondItem="fif-Ud-gxD" secondAttribute="trailing" constant="10" id="ANG-Rm-lfM"/>
+                <constraint firstItem="Ybs-fe-Bke" firstAttribute="leading" secondItem="Hcg-dx-OvF" secondAttribute="trailing" constant="20" id="Bkl-Xk-FNE"/>
+                <constraint firstItem="RaW-ZC-PHJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KJW-RT-7ch"/>
+                <constraint firstItem="Hcg-dx-OvF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="0.5" id="OFu-8q-fdd"/>
+                <constraint firstItem="Ybs-fe-Bke" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="dtU-Ps-iEX"/>
+                <constraint firstItem="Hcg-dx-OvF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="e6X-rf-y6a"/>
+                <constraint firstItem="dW0-sq-4SG" firstAttribute="top" secondItem="fif-Ud-gxD" secondAttribute="bottom" constant="8" id="gCH-t8-Q2W"/>
+                <constraint firstItem="Hcg-dx-OvF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="0.5" id="gGc-Df-Jkz"/>
+                <constraint firstItem="RaW-ZC-PHJ" firstAttribute="leading" secondItem="dW0-sq-4SG" secondAttribute="trailing" constant="40" id="hla-0H-42Z"/>
+                <constraint firstItem="RhQ-In-jRW" firstAttribute="leading" secondItem="RaW-ZC-PHJ" secondAttribute="trailing" constant="48" id="izw-Ce-8ot"/>
+                <constraint firstItem="fif-Ud-gxD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="lQJ-Z2-f1K"/>
+                <constraint firstItem="Hcg-dx-OvF" firstAttribute="leading" secondItem="QMC-q1-wiB" secondAttribute="trailing" constant="20" id="oXw-RM-aze"/>
+                <constraint firstItem="fif-Ud-gxD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="27" id="ogh-NH-nOi"/>
+                <constraint firstItem="RhQ-In-jRW" firstAttribute="top" secondItem="fif-Ud-gxD" secondAttribute="bottom" constant="8" id="tQh-cI-bSv"/>
+                <constraint firstItem="QMC-q1-wiB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="xBI-Cd-Yju"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="PlayAndPauseBtn" destination="RaW-ZC-PHJ" id="mke-ag-XZg"/>
+                <outlet property="nextBtn" destination="RhQ-In-jRW" id="mgH-cf-c6I"/>
+                <outlet property="previousBtn" destination="dW0-sq-4SG" id="9yj-dy-DUa"/>
+                <outlet property="slider" destination="fif-Ud-gxD" id="eHg-04-XWB"/>
+            </connections>
+            <point key="canvasLocation" x="518" y="31.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="player_next.png" width="40" height="40"/>
+        <image name="player_pause.png" width="50" height="50"/>
+        <image name="player_prev.png" width="40" height="40"/>
+    </resources>
+</document>
